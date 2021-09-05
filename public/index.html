@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+  <title>Chat app</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="container">
-      <h1>Nodejs + Socket chat app</h1>
-      <div class="window"></div>
-      <form class="chat">
-        <div id="chatSection"></div>
-          <label class="label">
+  <div id="container">
+    <h1>
+      Nodejs + Socket Chat app
+    </h1>
+    <div id="chatSection">
+      <div class="chat-window"></div>
+      <form class="chat-form">
+        <label class="chat-label">
           Enter a message:
-          <input type="text" class = "input" />     
-         </label>
-          <input type ="submit" class="submit" value="enter" />
+          <input type="text" class="chat-input" />
+        </label>
+        <input type="submit" class="chat-submit" value="enter" />
       </form>
     </div>
- </div>
-    
+  </div>
 
-    <script src="socket.io/socket.io.js"></script>
-    <script src="script.js"></script>
-
-    </div>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
